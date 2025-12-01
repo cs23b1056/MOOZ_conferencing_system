@@ -1,0 +1,187 @@
+/* style.qss - MOOZ Blue Theme */
+
+/* --- Main Window --- */
+QMainWindow, QDialog {
+    background-color: #202124; /* Dark grey, almost black */
+    color: #e8eaed;
+}
+
+QWidget {
+    color: #e8eaed;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* --- Login Dialog --- */
+#LoginDialog {
+    background-color: #2c3e50; /* Dark Blue */
+    color: #ecf0f1;
+}
+#LoginDialog QLabel {
+    font-size: 14px;
+    color: #ecf0f1;
+}
+QLineEdit {
+    background-color: #1e2a3a;
+    border: 1px solid #34495e;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ecf0f1;
+}
+QLineEdit:focus {
+    border: 1px solid #3498db;
+}
+#LoginDialog QPushButton  {
+    background-color: #3498db; /* Bright Blue */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: none;
+    min-height: 28px;
+    max-height: 40px;
+}
+#LoginDialog QPushButton:hover {
+    background-color: #5dade2;
+}
+
+/* --- Main Video/Gallery Stage --- */
+#VideoCell {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 12px;
+    margin: 4px;
+}
+#VideoCell QLabel#NameLabel {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin: 8px;
+    font-size: 12px;
+}
+#SelfView {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 12px;
+}
+
+/* --- Bottom Control Bar --- */
+#ControlsBar {
+    background-color: #202124;
+    border-top: 1px solid #34495e;
+}
+
+/* Base Button Style (Circular) */
+QPushButton#ControlButton {
+    background-color: #3c4043; /* Dark Grey */
+    color: #e8eaed;
+    border: none;
+    padding: 10px;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+QPushButton#ControlButton:hover {
+    background-color: #4a4e52;
+}
+QPushButton#ControlButton:pressed {
+    background-color: #5f6368;
+}
+
+/* Red Button (Leave, Mute, Cam Off) */
+QPushButton#LeaveButton {
+    background-color: #e74c3c; /* Red */
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+QPushButton#LeaveButton:hover {
+    background-color: #c0392b; /* Darker Red */
+}
+
+/* Active Button (Chat, Participants On) */
+QPushButton#ActiveButton {
+    background-color: #3498db; /* Blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 22px;
+    min-width: 44px;
+    max-width: 44px;
+    min-height: 44px;
+    max-height: 44px;
+}
+
+/* --- Side Panel --- */
+QDockWidget {
+    background-color: #2c3e50;
+    border-left: 1px solid #34495e;
+}
+
+/* Tab Bar Styling */
+QTabWidget::pane {
+    border: none;
+    background-color: #2c3e50;
+}
+QTabBar::tab {
+    background: #2c3e50;
+    color: #95a5a6; /* Grey text */
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+QTabBar::tab:selected {
+    background: #1e2a3a; /* Darker blue */
+    color: #ecf0f1;
+}
+QTabBar::tab:!selected:hover {
+    background: #34495e;
+}
+
+/* Chat Panel */
+QTextEdit { 
+    background-color: #1e2a3a;
+    border: none;
+    padding: 10px;
+    color: #ecf0f1;
+    font-size: 14px;
+}
+QLineEdit {
+    background-color: #34495e;
+    border: 1px solid #566573;
+    border-radius: 18px;
+    padding: 8px 15px;
+    margin: 10px;
+}
+
+/* --- Scrollbar Styling --- */
+QScrollBar:vertical {
+    border: none; background: #2c3e50; width: 10px; margin: 0px;
+}
+QScrollBar::handle:vertical {
+    background: #566573; min-height: 20px; border-radius: 5px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: none; }
+
+/* --- Status Bar --- */
+QStatusBar {
+    background-color: #1e2a3a;
+    color: #95a5a6;
+}
+QStatusBar::item {
+    border: 0px;
+}
